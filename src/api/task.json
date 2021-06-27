@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "title":"Planning",
+        "description":"Development Process Planning: find out the scope of the problem and determine solutions",
+        "status": true
+    },
+    {
+        "id":2,
+        "title":"Systems Analysis and Requirements",
+        "description":"consider the functional requirements of the project or solution,analyzing the needs of the end users to ensure the new system can meet their expectations",
+        "status":false
+    },
+    {
+        "id":3,
+        "title":"Systems Design",
+        "description":"end users to discuss and determine their specific business information needs for the proposed system,consider the essential components (hardware and/or software) structure (networking capabilities), processing and procedures for the system to accomplish its objectives.",
+        "status":true
+    },
+    {
+        "id":4,
+        "title":"Development: Phase1",
+        "description":"start of production",
+        "status":false
+    },
+    {
+        "id":5,
+        "title":"Development: Phase2",
+        "description":"instillation and change",
+        "status": true
+    },
+    {
+        "id":6,
+        "title":"Integration and Testing",
+        "description":"Testing ,Repeatation, specifically to check for errors, bugs and interoperability",
+        "status":false
+    },
+    {
+        "id":7,
+        "title":"Implementation",
+        "description":"actual installation of the newly-developed system, putting the project into production by moving the data and components from the old system and placing them in the new system via a direct cutover",
+        "status":true
+    },
+    {
+        "id":8,
+        "title":"Operations and Maintenance",
+        "description":"boost performance, add new capabilities or meet additional user requirements if there",
+        "status":false
+    }
+]

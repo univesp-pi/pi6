@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Projeto Integrador</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <!-- Bootstrap core CSS-->
+  <link href="./../../assets/dashboard/newDashboard/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template--> 
+ <link href="./../../assets/dashboard/newDashboard/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="./../../assets/dashboard/newDashboard/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="./../../assets/dashboard/newDashboard/css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="fixed-nav sticky-footer" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="mainNav">
+    <a class="navbar-brand" href="index.html">Projeto Integrador</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" [routerLink]="['/dashboard']">
+            <i class="fas fa-tachometer-alt"></i>&nbsp;
+            <span class="nav-link-text">Painel</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" [routerLink]="['/explore']">
+            <i class="fas fa-bars"></i>&nbsp;
+            <span class="nav-link-text">Explorar</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" [routerLink]="['/reports']">
+            <i class="fas fa-inbox"></i>&nbsp;
+            <span class="nav-link-text">Relatorios</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="">
+            <i class="far fa-life-ring"></i>&nbsp;
+            <span class="nav-link-text">Ajuda</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="">
+            <i class="fas fa-comments"></i>&nbsp;
+            <span class="nav-link-text">FeedBack</span>
+          </a>
+        </li>
+   </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+                <i class="fas fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        
+        <!--<li class="nav-item dropdown">
+        <a class="nav-link mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            <i class="fas fa-bell"></i>
+        <div class="new-alert">4</div>
+      </a>
+         <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                    <i class="fas fa-long-arrow-up"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong><i class="fas fa-long-arrow-down"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong><i class="fas fa-long-arrow-up"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>-->
+       
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-user-circle"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+<h3>Overview</h3>
+      <!-- Icon Cards-->
+      <div class="row">
+        <div *ngFor ="let project of projects" class="col-xl-4 col-sm-6 mb-4">
+          <div class="card card-dashbord  text-white bg-one  o-hidden h-100">
+            <div class="card-body">
+                <div class="jira-log">  Fetched from <img src="./../../assets/dashboard/newDashboard/img/jira.png" alt="jira logo" /></div>
+                <div class="content-one"><h6>{{project.name}}</h6><span class="font-light"><p>{{project.description}}</p></span></div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" >
+              <span class="float-left">ProjectId: {{project.id}}</span>
+              
+            </a>
+          </div>
+        </div>
+        <!--<div class="col-xl-4 col-sm-6 mb-4">
+          <div class="card card-dashbord  text-white bg-two  o-hidden h-100">
+            <div class="card-body">
+                <div class="jira-log">  Fetched from <img src="./../../assets/dashboard/newDashboard/img/jira.png" alt="jira logo" /></div>
+                <div class="content-one">9<span class="divider">/</span> <span class="font-light">16</span>
+                </div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" >
+              <span class="float-left">Bugs resolved</span>
+              
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-4">
+          <div class="card card-dashbord  text-white bg-three  o-hidden h-100">
+            <div class="card-body">
+                    <div class="jira-log">  Fetched from <img src="./../../assets/dashboard/newDashboard/img/jira.png" alt="jira logo" /></div>
+                    <div class="content-one">9<span class="divider">/</span> <span class="font-light">16</span></div>
+                <canvas id="myChart"></canvas>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" >
+               <span class="float-left text-dark">Productivity <span>36%</span></span>
+              
+            </a>
+          </div>
+        </div>-->
+        
+     
+      </div>
+      <!-- Area Chart Example-->
+      
+      <div class="row">
+          <!--<div class="col-lg-4">
+              <div class="card lg-3">
+                  <div class="card-header">
+                      <i class="fa fa-newspaper-o"></i> News </div>
+                  <div class="list-group list-group-flush small">
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-125</div>
+                              <div class="media-body">
+                                  <div class="id-header"> Pulkit Arora
+                                      <div class="text-muted smaller">commented 4 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr/>
+                          <div class="issue-more-detals"> What is the acceptance criteria for this story?</div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-46</div>
+                              <div class="media-body">
+                                  <div class="id-header">Willam Arora
+                                      <div class="text-muted smaller">commented 4 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr/>
+                          <div class="issue-more-detals"> Please close this issue as it looks like a duplicate of MVP-112. Thaks.</div>
+                      </a>
+                       <a class="list-group-item list-group-item-action resolved" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-95</div>
+                              <div class="media-body">
+                                  <div class="id-header"> Pulkit Arora
+                                      <div class="text-muted smaller">Resolved 14 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                            <hr/>
+                          <div class="issue-more-detals"><i class="fa color-green fa-check-circle"></i> Resolved</div>
+                      </a>
+                       <a class="list-group-item list-group-item-action new-bug" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-145</div>
+                              <div class="media-body">
+                                  <div class="id-header"> Kanika 
+                                      <div class="text-muted smaller">Created 24 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                           <hr/>
+                          <div class="issue-more-detals"><i class="fa color-orange fa-exclamation-triangle"></i> New Bug Created</div>
+                      </a>
+                       <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="id-detals border rounded ">MVP-46</div>
+                              <div class="media-body">
+                                  <div class="id-header">Willam Arora
+                                      <div class="text-muted smaller">commented 4 minutes ago</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr/>
+                          <div class="issue-more-detals"> Please take this one on high priority! The upper button is not working.
+it should either show an error or execute the query.</div>
+                      </a>
+                    </div>
+              </div>
+          </div>-->
+          <!--<div class="col-lg-4">
+              <div class="card card-notifications lg-3">
+                  <div class="card-header">
+                      <i class="fa fa-bell-o"></i> Notifications </div>
+                  <div class="list-group list-group-flush small">
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">PA</div>
+                              <div class="media-body">  
+                                  <strong>Pulkit Arora</strong> tagged you in a comment on
+                                  <strong>MVP-123</strong>.
+                                  <div class="text-muted smaller">4 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">KB</div>
+                              <div class="media-body">  
+                                  <strong>Kanika</strong> assigned 
+                                  <strong>MVP-98</strong>to you
+                                  <div class="text-muted smaller">19 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">ND</div>
+                              <div class="media-body">  
+                                  <strong>Nagendra Desai</strong> tagged you in a comment on
+                                  <strong>MVP-76</strong>.
+                                  <div class="text-muted smaller">24 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                       <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <div class="user-logo border rounded-circle">PA</div>
+                              <div class="media-body">  
+                                  <strong>Pulkit Arora</strong> createda bug and assigned you.
+                                  <div class="text-muted smaller">4 minutes ago</div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>-->
+          <div class="col-lg-4">
+              <div class="card card-to-do lg-3">
+                  <div class="card-header">
+                    <i class="fas fa-bookmark"></i> To-do 
+                    <button (click)= "toggleClick()" class="btn" type="button">
+                        <i class="fas fa-plus"></i> 
+                    </button>
+                    <div *ngIf="isClicked">
+                            <div class="float-left"><input class="new-task" placeholder="Add Task" [(ngModel)]="todoTitle"></div><br>
+                            <div class="float-right">
+                                    <button (click)= "toggleClick()" (click)="addTask()" class="btn" type="button">
+                                            Add 
+                                    </button>
+
+                            </div><br>
+                            
+                            
+                    </div>
+                </div>
+                <div class="list-group">
+                        <a class="list-group-item" *ngFor="let task of tasks ; index as todoId" class="task-list">
+                          
+                            <div class="view">
+                              <span> <input class="toggle" type="checkbox" (click)="toggleTaskComplete(todoId)" [checked]="task.status"></span>&nbsp;&nbsp;
+                              <a>{{task.title}}</a>&nbsp;&nbsp;&nbsp;
+                              <div class="right"><span (click)="removeTask(todoId)"><i class="fas fa-trash-alt"></i></span> </div>
+                            </div>
+                          
+                        </a>
+                    </div>
+                  <!--<div  class="list-group list-group-flush small">
+                      <a  *ngFor="let task of tasks" [class.completed]="task.status" class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                                <i class="fas fa-check-square" aria-hidden="true"></i>
+                              <div class="media-body">
+                                    <input class="toggle" type="checkbox" (click)="toggleTaskComplete(task)" [checked]="task.complete">
+                                    <label>{{task.name}}</label>
+                                    <button class="destroy" (click)="removeTask(task)"></button>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <i class="fas fa-check-square" aria-hidden="true"></i>
+                              <div class="media-body">
+                                    Talk to Nagendra about PPT
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <i class="fas fa-check-square" aria-hidden="true"></i>
+                              <div class="media-body">
+                                    Ask Deepak to chnage color on homepage chat button
+                              </div>
+                          </div>
+                      </a>
+                      <a class="list-group-item list-group-item-action" href="#">
+                          <div class="media">
+                              <i class="fas fa-check-square" aria-hidden="true"></i>
+                              <div class="media-body">
+                                  Hire 2 more interns
+                              </div>
+                          </div>
+                      </a>
+                  </div>-->
+              </div>
+          </div>
+        </div>
+   
+     
+            <!-- Example DataTables Card-->
+   
+    </div>
+   
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <!--<footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Projeto Integrador 2018</small>
+        </div>
+      </div>
+     
+    </footer>-->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+    </a>
+
+     <!-- Bootstrap core JavaScript-->
+     <script src="vendor/jquery/jquery.min.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <!-- Core plugin JavaScript-->
+     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+     <!-- Page level plugin JavaScript-->
+     <script src="vendor/chart.js/Chart.min.js"></script>
+     <!--    <script src="vendor/datatables/jquery.dataTables.js"></script>
+     <script src="vendor/datatables/dataTables.bootstrap4.js"></script>-->
+     <!-- Custom scripts for all pages-->
+     <script src="js/sb-admin.js"></script>
+     <!-- Custom scripts for this page-->
+     <!--<script src="js/sb-admin-datatables.min.js"></script>-->
+     <!--<script src="js/sb-admin-charts.min.js"></script>-->
+     <script>
+	// Datas
+
+        
+var ctx = document.getElementById("myChart");
+
+new Chart(document.getElementById("myChart"), {
+    
+    type: 'doughnut',
+    data: {
+      labels: ["High Priority", "Med Priority", "Low Priority"],
+      borderWidth: [0],
+      datasets: [
+        {
+          label: "Population (millions)",
+          position: 'bottom',
+          backgroundColor: ["#F7464A", "#46BFBD","#FDB45C"],
+          data: [2478,5267,734],
+          borderWidth: [0, 0, 0]
+        }
+      ],
+         options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+    
+    }
+  
+});
+
+
+</script>
+  
+  </div>
+</body>
+
+</html>

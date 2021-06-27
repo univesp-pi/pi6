@@ -1,0 +1,404 @@
+[
+    {
+        
+        "id":1,
+        "name":"Copenhagen",
+        "siteManager":[
+            {
+                "id": 1,
+                "name":"Joe",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 5,
+        "technologies":[
+            {
+                "id": 2,
+                "name": "NLP"
+            },
+            {
+                "id": 3,
+                "name": "Java Enterprise"
+            }
+    ],
+        "projects":[
+             {
+                "id": 1,
+                "name": "Titan"
+             }
+    ],
+        "teams":[
+            {
+                "id": 1,
+                "name":"The Major Eagles"
+            },
+            {
+                "id": 2,
+                "name":"The Grand Cats"
+            }
+        ]
+    },
+    {
+      
+        "id":2,
+        "name":"Odense",
+       
+        "siteManager":
+        [
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 15,
+        "technologies":[
+            {
+                "id": 4,
+                "name": "Visa Payments"
+            },
+            {
+                "id": 5,
+                "name": "Amazon (AWS)"
+            }
+    ],
+        "projects":[
+             {
+                "id": 2,
+                "name": "Project Hanks"
+             }
+    ],
+        "teams":[
+        {
+            "id": 3,
+            "name":"The Grave Sirens"
+        },
+        {
+            "id": 4,
+            "name":"The True Ravens"
+        } 
+        ]
+    },
+    {   
+        "id":3,
+        "name":"Aarhus",
+        "siteManager":[
+            {
+                "id": 3,
+                "name":"Martin",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 25,
+        "technologies":[
+            {
+                "id": 5,
+                "name": "Amazon (AWS)"
+            },
+            {
+                "id": 6,
+                "name": "Angular"
+            }
+    ],
+        "projects":[
+             {
+                "id": 3,
+                "name": "Kodiak"
+            }
+    ],
+        "teams":[
+            {
+                
+                "id": 5,
+                "name": "The Steel Wolves"
+            },
+            {
+                
+                "id": 6,
+                "name": "The Valiant Claws"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "name":"Aalborg",
+        "siteManager": [
+            {
+            "id": 1,
+            "name":"Joe",
+            "role": "Manager"
+        }
+    ],
+        "siteStrength": 5,
+        "technologies":[
+            {
+                "id": 7,
+                "name": "React"
+            },
+            {
+                "id": 8,
+                "name": "JavaScript"
+            }
+    ],
+        "projects":[
+            {
+                "id": 4,
+                "name":"Code Talkers"
+            }
+     ],
+        "teams":[
+            {
+                "id": 7,
+                "name": "The Happy Toucans"
+            },
+            {
+                "id": 8,
+                "name": "The Red Beluga Whales"
+            }
+        ]
+    },
+    {
+        "id":5,
+        "name":"Stockholm",
+         "siteManager":
+        [
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 7,
+        "technologies":[
+            {
+                "id": 9,
+                "name": "C#"
+            },
+            {
+                "id": 10,
+                "name": "Python"
+            }
+    ],
+        "projects":[
+             {
+                "id": 5,
+                "name": "Project Blue Book"
+             }
+    ],
+        "teams":[
+            {
+                "id":9,
+                "name":"The Handsome Boars"
+            },
+            {
+                "id":10,
+                "name":"The Wild Tornadoes"
+            }
+        ]
+    },
+    {
+    "id":6,
+    "name":"Gothenburg",
+    "siteManager":
+        [
+            {
+                "id": 3,
+                "name":"Martin",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 11,
+        "technologies":[
+            {
+                "id": 1,
+                "name": "Machine Learning"
+            },
+            {
+                "id": 2,
+                "name": "NLP"
+            }
+    ],
+        "projects":[
+             {
+                "id": 6,
+                "name": "X Lab"
+             }
+    ],
+        "teams":[
+            {
+                "id": 11,
+                "name": "The Rapid Pumas"
+            },
+            {
+                "id": 12,
+                "name": "The Flying Titans"
+            }
+        ]
+    },
+    {
+       
+        "id":7,
+        "name":"Lund",
+        "siteManager":[
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 15,
+        "technologies":[
+            {
+                "id": 3,
+                "name": "Java Enterprise"
+            },
+            {
+                "id": 4,
+                "name": "Visa Payments"
+            }
+    ],
+        "projects":[
+            {
+                "id": 7,
+                "name": "Project 404"
+             }
+    ],
+        "teams":[
+            {
+                "id": 13,
+                "name": "The Big Gnomes"
+             },
+             {
+                "id": 14,
+                "name": "The Storm Turkeys"
+             }
+        ]
+    },
+    {
+        
+        "id":8,
+        "name":"Oslo",
+        "siteManager":
+        [
+            {
+            "id": 1,
+            "name":"Joe",
+            "role": "Manager"
+        }
+    ],
+        "siteStrength": 10,
+        "technologies":[
+            {
+                "id": 5,
+                "name": "Amazon (AWS)"
+            },
+            {
+                "id": 6,
+                "name": "Angular"
+            }
+    ],
+        "projects":[
+            {
+               "id": 8,
+               "name": "Manhattan Project"
+           }
+   ],
+        "teams":[
+            {
+                "id": 15,
+                "name": "The Fiery Hogs"
+                
+            },
+            {
+                "id": 16,
+                "name": "The Hard Royals"
+                
+            }
+        ]
+    },
+    {
+       "id":9,
+        "name":"Bergen",
+        "siteManager":[
+            {
+                "id": 2,
+                "name":"Alex",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 15,
+        "technologies":[
+            {
+                "id": 7,
+                "name": "C++"
+            },
+            {
+                "id": 8,
+                "name": "Computer Vision"
+            }
+     ],
+        "projects":[
+             {
+                "id": 9,
+                "name": "Durango"
+             }
+    ],
+        "teams":[
+            {
+               "id": 17,
+               "name": "The Swift Wombats"
+            },
+            {
+               "id": 18,
+               "name": "The Fantastic Badgers"
+            }
+   ]
+    },
+    {
+        "id":10,
+        "name":"Helsinki",
+        "siteManager":[
+            {
+                "id": 3,
+                "name":"Martin",
+                "role": "Manager"
+            }
+
+        ],
+        "siteStrength": 7,
+        "technologies":[
+            {
+                "id": 7,
+                "name": "React"
+            },
+            {
+                "id": 8,
+                "name": "JavaScript"
+            }
+    ],
+        "projects":[
+            {
+                "id": 10,
+                "name": "Apollo"
+            }
+           
+    ],
+        "teams":[
+            {
+                "id": 19,
+                "name": "The Amazing Pythons"
+             },
+             {
+                "id": 20,
+                "name": "The Storm Turkeys"
+             }
+        ]
+    }
+]
