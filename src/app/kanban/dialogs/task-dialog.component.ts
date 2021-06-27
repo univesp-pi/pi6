@@ -29,7 +29,7 @@ import { BoardService } from "../board.service";
     </div>
     <div mat-dialog-actions>
       <button mat-button [matDialogClose]="data" cdkFocusInitial>
-        {{ data.isNew ? "Add Task" : "Atualizar atividade" }}
+        {{ data.isNew ? "Adicionar Atividade" : "Atualizar atividade" }}
       </button>
       <app-delete-button
         (delete)="handleDelete()"
