@@ -1,0 +1,22 @@
+button {
+  img {
+    width: 1.25em;
+  }
+}
+
+.btn--board {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.login--guest-btn {
+  margin-left: 25px;
+}
+
+:host {
+  text-align: center;
+}
+
+.logout {
+  padding-top: 5em;
+}
