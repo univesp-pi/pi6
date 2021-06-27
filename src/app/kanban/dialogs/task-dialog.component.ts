@@ -10,7 +10,7 @@ import { BoardService } from "../board.service";
     <div mat-dialog-content class="content">
       <mat-form-field>
         <textarea
-          placeholder="Task description"
+          placeholder="Descricao da atividade"
           matInput
           [(ngModel)]="data.task.description"
         ></textarea>
@@ -29,7 +29,7 @@ import { BoardService } from "../board.service";
     </div>
     <div mat-dialog-actions>
       <button mat-button [matDialogClose]="data" cdkFocusInitial>
-        {{ data.isNew ? "Add Task" : "Update Task" }}
+        {{ data.isNew ? "Add Task" : "Atualizar atividade" }}
       </button>
       <app-delete-button
         (delete)="handleDelete()"
