@@ -2,28 +2,28 @@
 
     <!-- Sign up toggle-->
     <div *ngIf="isSignup">
-        <h3>Create Account</h3>
+        <h3>Criar uma Conta</h3>
 
         <button mat-stroked-button (click)="changeType('login')">
-            Returning user?
+            Ja e Usuario?
         </button>
     </div>
 
     <!-- Login toggle -->
     <div *ngIf="isLogin">
-        <h3>Sign In</h3>
+        <h3>Entrar</h3>
 
         <button size="small" mat-stroked-button (click)="changeType('signup')">
-            New user?
+            Novo Usuario
         </button>
     </div>
 
     <!-- Password reset -->
     <div *ngIf="isPasswordReset">
-        <h3>Reset Password</h3>
+        <h3>Reiniciar Senha</h3>
 
         <button size="small" mat-button (click)="changeType('login')">
-            Back
+            Voltar
         </button>
     </div>
 
@@ -51,7 +51,7 @@
                 autocomplete="off" />
 
             <mat-error *ngIf="passwordConfirm.dirty && !passwordDoesMatch && passwordConfirm">
-                Password does not match
+                Senhas nao correspondem 
             </mat-error>
         </mat-form-field>
 
@@ -61,16 +61,16 @@
         <!-- Submit button -->
         <button *ngIf="!isPasswordReset" mat-raised-button color="accent" type="submit"
             [disabled]="form.invalid || !passwordDoesMatch || loading">
-            Submit
+            Enviar
         </button>
 
         <!-- Reset password button -->
         <button *ngIf="isPasswordReset" mat-stroked-button type="submit" [disabled]="loading">
-            Send Reset Email
+            Enviar Email
         </button>
     </form>
 
     <button *ngIf="isLogin && !isPasswordReset" mat-button (click)="changeType('reset')">
-        Forgot password?
+        Esqueceu a sua senha?
     </button>
 </mat-card>

@@ -3,24 +3,24 @@
     <h1>Login</h1>
 
     <button mat-raised-button appGoogleSignin>
-      <img src="/assets/google-logo.svg" /> Login with Google
+      <img src="/assets/google-logo.svg" /> Login com o Google
     </button>
 
     <button mat-raised-button appGuestSignin class="login--guest-btn">
-      <mat-icon>person</mat-icon> Login as Guest
+      <mat-icon>person</mat-icon> Login como Convidado
     </button>
 
-    <h5>OR</h5>
+    <h5>OU</h5>
 
     <app-email-login></app-email-login>
   </div>
 
   <div *ngIf="afAuth.authState | async as user">
     <p *ngIf="!user.isAnonymous">
-      Logged in as <strong>{{ user.email }}</strong>
+      Logado como <strong>{{ user.email }}</strong>
     </p>
 
-    <p *ngIf="user.isAnonymous">Logged in as a Guest</p>
+    <p *ngIf="user.isAnonymous">Logado como Convidado </p>
 
     <button
       class="btn--board"
